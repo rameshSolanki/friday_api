@@ -1,0 +1,6 @@
+name: Friday Api
+type: module
+description: 'Friday Api Module'
+package: Custom
+version: 8.x
+core: 8.x

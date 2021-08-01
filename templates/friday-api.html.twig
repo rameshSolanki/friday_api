@@ -1,0 +1,27 @@
+<p>Blog List!</p>
+<div class="table table-responsive">
+<table class="table table-bordered" id='items_table'>
+<thead class="thead-light">
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Body</th>
+<th>Date</th>
+<th>Thumbnail</th>
+</tr>
+</thead>
+<tbody>
+{% for blog in blogs %}
+    <tr>
+     <td>{{ blog.nid }}</td>
+      <td><a href="https://fridayapp.cu.ma/lawncare/blog-page/{{ blog.nid }}">{{ blog.title }}</a></td>
+      <td>{{ blog.body | raw }}</td>
+      <td>{{ blog.field_blog_date }}</td>
+      <td>
+      <img width="50px" height="50px" src="http://fridayapp.cu.ma{{ blog.field_blog_thumbnail }}"></img>
+      </td>
+      </tr>
+{% endfor %}
+   </tbody>
+   </table>
+   </div>

@@ -1,0 +1,11 @@
+friday_api_js:
+  version: 1.x
+  js:
+    js/friday_api.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.form
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.dialog.ajax
